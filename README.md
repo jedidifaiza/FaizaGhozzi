@@ -10,7 +10,7 @@ En ligne : https://jedidifaiza.github.io/FaizaGhozzi/
 | Fichier | Rôle |
 |---|---|
 | `index.html` | Le site complet : contenu, mise en page (CSS) et interactions (JavaScript) |
-| `photo.jpg` | Photo de profil, affichée en cercle (à ajouter, carrée de préférence) |
+| `photo.jpg` | Photo de profil (carrée, 480 × 480 px), affichée en cercle |
 | `.nojekyll` | Indique à GitHub Pages de publier les fichiers tels quels |
 
 ## Mettre à jour le site
