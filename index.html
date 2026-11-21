@@ -1,0 +1,1320 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Faiza Ghozzi — Informatique, Université de Sfax</title>
+  <meta name="description" content="Faiza Ghozzi (épouse Jedidi), maître assistante en informatique à l'ISIMS, Université de Sfax, laboratoire MIRACL. Entrepôts de données, processus ETL, Big Data, NoSQL et alignement sémantique.">
+  <meta name="author" content="Faiza Ghozzi">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Faiza Ghozzi — Enseignement, recherche et vie universitaire">
+  <meta property="og:description" content="Maître assistante en informatique à l'ISIMS (Université de Sfax), laboratoire MIRACL. Entrepôts de données, ETL, Big Data et NoSQL.">
+  <meta property="og:locale" content="fr_FR">
+  <meta name="theme-color" content="#1d5a86">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231d5a86'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' fill='white' text-anchor='middle'%3EFG%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Faiza Ghozzi",
+    "alternateName": "Faiza Ghozzi Jedidi",
+    "jobTitle": "Maître assistante en informatique",
+    "email": "mailto:faiza.ghozzi@isims.usf.tn",
+    "affiliation": [
+      {"@type": "CollegeOrUniversity", "name": "Institut Supérieur d'Informatique et de Multimédia de Sfax (ISIMS), Université de Sfax"},
+      {"@type": "ResearchOrganization", "name": "Laboratoire MIRACL"}
+    ],
+    "alumniOf": {"@type": "CollegeOrUniversity", "name": "Université Paul Sabatier – Toulouse III"},
+    "knowsAbout": ["Entrepôts de données", "Processus ETL", "Big Data", "NoSQL", "Business Intelligence", "Alignement d'ontologies"]
+  }
+  </script>
+
+  <style>
+    /* =========================================================
+       Couleurs (modifiez ici pour changer l'apparence du site)
+       ========================================================= */
+    :root {
+      --bg: #f6f5f1;
+      --bg-alt: #efede6;
+      --surface: #ffffff;
+      --surface-2: #eef0f3;
+      --ink: #18202b;
+      --ink-2: #434d5c;
+      --muted: #616a78;
+      --line: #e1e3e8;
+      --accent: #1d5a86;
+      --accent-ink: #ffffff;
+      --accent-soft: #e2edf6;
+      --award: #7a5600;
+      --award-soft: #faefd2;
+      --shadow: 0 1px 2px rgba(20, 30, 45, .05), 0 4px 16px rgba(20, 30, 45, .05);
+      color-scheme: light;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg: #0f141a;
+        --bg-alt: #0b0f14;
+        --surface: #161c24;
+        --surface-2: #1e2631;
+        --ink: #e8ebf0;
+        --ink-2: #bcc4cf;
+        --muted: #8f99a7;
+        --line: #2a3340;
+        --accent: #82b6de;
+        --accent-ink: #0f141a;
+        --accent-soft: #1b2b3b;
+        --award: #e6bc63;
+        --award-soft: #2f2716;
+        --shadow: none;
+        color-scheme: dark;
+      }
+    }
+    :root[data-theme="dark"] {
+      --bg: #0f141a;
+      --bg-alt: #0b0f14;
+      --surface: #161c24;
+      --surface-2: #1e2631;
+      --ink: #e8ebf0;
+      --ink-2: #bcc4cf;
+      --muted: #8f99a7;
+      --line: #2a3340;
+      --accent: #82b6de;
+      --accent-ink: #0f141a;
+      --accent-soft: #1b2b3b;
+      --award: #e6bc63;
+      --award-soft: #2f2716;
+      --shadow: none;
+      color-scheme: dark;
+    }
+
+    /* ===================== Base ===================== */
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 76px; -webkit-text-size-adjust: 100%; }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font: 400 16px/1.6 Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      overflow-x: hidden;
+    }
+    h1, h2, h3 { font-family: "Source Serif 4", Georgia, serif; font-weight: 600; line-height: 1.2; margin: 0; letter-spacing: -0.01em; }
+    p { margin: 0; }
+    a { color: var(--accent); text-underline-offset: 3px; }
+    a:hover { text-decoration-thickness: 2px; }
+    ul, ol { margin: 0; padding: 0; list-style: none; }
+    :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+    .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+    @media (max-width: 600px) { .wrap { padding: 0 16px; } }
+    .skip { position: absolute; left: -9999px; top: 8px; background: var(--accent); color: var(--accent-ink); padding: 8px 14px; border-radius: 6px; z-index: 100; }
+    .skip:focus { left: 8px; }
+
+    /* ===================== En-tête ===================== */
+    .topbar {
+      position: sticky; top: 0; z-index: 50;
+      background: color-mix(in srgb, var(--bg) 88%, transparent);
+      backdrop-filter: saturate(1.4) blur(10px);
+      -webkit-backdrop-filter: saturate(1.4) blur(10px);
+      border-bottom: 1px solid var(--line);
+    }
+    .topbar .wrap { display: flex; align-items: center; gap: 16px; height: 60px; }
+    .brand { font-family: "Source Serif 4", Georgia, serif; font-weight: 600; font-size: 18px; color: var(--ink); text-decoration: none; white-space: nowrap; margin-right: auto; }
+    .nav { display: flex; gap: 2px; }
+    .nav a { color: var(--ink-2); text-decoration: none; font-size: 14px; font-weight: 500; padding: 6px 10px; border-radius: 6px; white-space: nowrap; }
+    .nav a:hover { background: var(--surface-2); color: var(--ink); }
+    .nav a.active { color: var(--accent); background: var(--accent-soft); }
+    .icon-btn { display: inline-grid; place-items: center; width: 36px; height: 36px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); color: var(--ink-2); cursor: pointer; flex: none; }
+    .icon-btn:hover { color: var(--ink); }
+    .icon-btn svg { width: 18px; height: 18px; }
+    .menu-btn { display: none; }
+    .theme-btn .sun { display: none; }
+    :root[data-theme="dark"] .theme-btn .sun { display: block; }
+    :root[data-theme="dark"] .theme-btn .moon { display: none; }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) .theme-btn .sun { display: block; }
+      :root:not([data-theme="light"]) .theme-btn .moon { display: none; }
+    }
+    @media (max-width: 940px) {
+      .menu-btn { display: inline-grid; }
+      .nav { display: none; position: absolute; top: 60px; left: 0; right: 0; flex-direction: column; padding: 8px 16px 16px; background: var(--bg); border-bottom: 1px solid var(--line); box-shadow: var(--shadow); }
+      .nav.open { display: flex; }
+      .nav a { padding: 10px 12px; font-size: 15px; }
+    }
+
+    /* ===================== Profil (hero) ===================== */
+    .hero { padding: 64px 0 56px; }
+    .hero-grid { display: grid; grid-template-columns: 180px 1fr; gap: 40px; align-items: start; }
+    .avatar { position: relative; width: 180px; height: 180px; border-radius: 50%; background: var(--accent-soft); display: grid; place-items: center; overflow: hidden; border: 4px solid var(--surface); box-shadow: 0 0 0 1px var(--line), var(--shadow); }
+    .avatar span { font-family: "Source Serif 4", Georgia, serif; font-size: 56px; font-weight: 600; color: var(--accent); }
+    .avatar img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+    .eyebrow { font-size: 13px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin-bottom: 10px; }
+    .hero h1 { font-size: clamp(38px, 5.4vw, 56px); }
+    .hero .alt-name { color: var(--muted); font-size: 15px; margin-top: 6px; }
+    .hero .role { font-size: 18px; font-weight: 500; color: var(--ink); margin-top: 18px; }
+    .hero .org { display: flex; flex-wrap: wrap; gap: 4px 14px; margin-top: 6px; font-size: 15px; color: var(--ink-2); }
+    .hero .org span { display: inline-flex; align-items: center; gap: 6px; }
+    .hero .org svg { width: 15px; height: 15px; color: var(--accent); flex: none; }
+    .hero .bio { font-size: 16.5px; color: var(--ink-2); margin-top: 18px; max-width: 66ch; }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+    .chip { font-size: 13px; padding: 4px 10px; border-radius: 999px; background: var(--surface); border: 1px solid var(--line); color: var(--ink-2); }
+    .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+    .btn { display: inline-flex; align-items: center; gap: 8px; padding: 9px 16px; border-radius: 8px; font-size: 14px; font-weight: 500; text-decoration: none; border: 1px solid var(--line); background: var(--surface); color: var(--ink); }
+    .btn:hover { border-color: var(--accent); color: var(--accent); }
+    .btn.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+    .btn.primary:hover { filter: brightness(1.08); color: var(--accent-ink); }
+    .btn svg { width: 16px; height: 16px; }
+    @media (max-width: 720px) {
+      .hero { padding: 32px 0 40px; }
+      .hero-grid { grid-template-columns: 1fr; gap: 20px; }
+      .avatar { width: 112px; height: 112px; border-width: 3px; }
+      .avatar span { font-size: 38px; }
+      .hero .role { font-size: 16.5px; margin-top: 14px; }
+      .hero .bio { font-size: 15.5px; }
+      .actions .btn { flex: 1 1 auto; justify-content: center; }
+      .stats { margin-top: 32px; }
+    }
+
+    /* Bouton « retour en haut » */
+    .to-top { position: fixed; right: 20px; bottom: 20px; z-index: 40; width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--line); background: var(--surface); color: var(--ink); box-shadow: var(--shadow); display: grid; place-items: center; cursor: pointer; opacity: 0; transform: translateY(8px); pointer-events: none; transition: opacity .2s, transform .2s; }
+    .to-top.show { opacity: 1; transform: none; pointer-events: auto; }
+    .to-top svg { width: 18px; height: 18px; }
+    @media (prefers-reduced-motion: reduce) { .to-top { transition: none; } }
+
+    /* Chiffres clés */
+    .stats { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-top: 48px; }
+    .stat { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; }
+    .stat .value { font-size: 30px; font-weight: 600; line-height: 1.1; color: var(--ink); font-variant-numeric: tabular-nums; }
+    .stat .label { font-size: 13.5px; color: var(--muted); margin-top: 6px; line-height: 1.35; }
+    @media (max-width: 860px) { .stats { grid-template-columns: repeat(3, 1fr); } }
+    @media (max-width: 520px) { .stats { grid-template-columns: repeat(2, 1fr); } }
+
+    /* ===================== Sections ===================== */
+    section.block { padding: 72px 0; border-top: 1px solid var(--line); }
+    section.block:nth-of-type(even) { background: var(--bg-alt); }
+    @media (max-width: 600px) { section.block { padding: 48px 0; } }
+    .section-head { margin-bottom: 32px; max-width: 72ch; }
+    .section-head .num { font-size: 13px; font-weight: 600; letter-spacing: .08em; color: var(--accent); text-transform: uppercase; }
+    .section-head h2 { font-size: clamp(28px, 3.5vw, 36px); margin-top: 6px; }
+    .section-head p { color: var(--ink-2); margin-top: 12px; }
+    h3.sub { font-size: 21px; margin: 40px 0 16px; }
+    h3.sub:first-child { margin-top: 0; }
+    .card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 20px 22px; }
+    .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    @media (max-width: 860px) { .grid-3 { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 680px) { .grid-2, .grid-3 { grid-template-columns: 1fr; } }
+    .muted { color: var(--muted); }
+    .small { font-size: 14px; }
+
+    /* Frise chronologique */
+    .timeline { position: relative; padding-left: 22px; }
+    .timeline::before { content: ""; position: absolute; left: 5px; top: 8px; bottom: 8px; width: 2px; background: var(--line); }
+    .timeline li { position: relative; padding-bottom: 20px; }
+    .timeline li:last-child { padding-bottom: 0; }
+    .timeline li::before { content: ""; position: absolute; left: -22px; top: 7px; width: 12px; height: 12px; border-radius: 50%; background: var(--surface); border: 2px solid var(--accent); }
+    .timeline li.now::before { background: var(--accent); }
+    .t-date { font-size: 13px; font-weight: 600; color: var(--accent); font-variant-numeric: tabular-nums; }
+    .t-title { font-weight: 600; margin-top: 2px; }
+    .t-desc { font-size: 14.5px; color: var(--ink-2); margin-top: 2px; }
+
+    /* Axes de recherche */
+    .axis { display: flex; flex-direction: column; gap: 10px; }
+    .axis .tag { font-size: 12px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--accent); }
+    .axis h3 { font-size: 19px; }
+    .axis p { font-size: 15px; color: var(--ink-2); }
+    .axis .tools { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; padding-top: 6px; }
+    .axis .tools span { font-size: 12.5px; padding: 2px 8px; border-radius: 6px; background: var(--surface-2); color: var(--ink-2); font-weight: 500; }
+
+    /* Projets et distinctions */
+    .project .period { font-size: 13px; font-weight: 600; color: var(--accent); }
+    .project h4 { font-size: 16px; margin: 4px 0 6px; line-height: 1.35; }
+    .project p { font-size: 14px; color: var(--ink-2); }
+    .awards li { display: flex; gap: 12px; align-items: flex-start; padding: 12px 0; border-bottom: 1px solid var(--line); }
+    .awards li:last-child { border-bottom: 0; }
+    .awards .medal { flex: none; width: 32px; height: 32px; border-radius: 50%; background: var(--award-soft); color: var(--award); display: grid; place-items: center; }
+    .awards .medal svg { width: 17px; height: 17px; }
+
+    /* ===================== Publications ===================== */
+    .toolbar { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between; margin-bottom: 20px; }
+    .seg { display: flex; flex-wrap: wrap; gap: 6px; }
+    .seg button { font: inherit; font-size: 14px; font-weight: 500; padding: 7px 12px; border-radius: 8px; border: 1px solid var(--line); background: var(--surface); color: var(--ink-2); cursor: pointer; }
+    .seg button:hover { color: var(--ink); border-color: var(--muted); }
+    .seg button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+    .seg button .n { font-variant-numeric: tabular-nums; opacity: .75; margin-left: 4px; }
+    .search { position: relative; flex: 1 1 240px; max-width: 320px; }
+    .search input { width: 100%; font: inherit; font-size: 14px; padding: 8px 12px 8px 34px; border-radius: 8px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); }
+    .search svg { position: absolute; left: 11px; top: 50%; transform: translateY(-50%); width: 15px; height: 15px; color: var(--muted); }
+    @media (max-width: 600px) { .search { max-width: none; } }
+    .pubs { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 4px 24px; }
+    .pub-year { display: grid; grid-template-columns: 72px 1fr; gap: 20px; border-top: 1px solid var(--line); }
+    .pub-year.first { border-top: 0; }
+    .pub-year[hidden], .pub[hidden] { display: none; }
+    .year-label { font-family: Inter, system-ui, sans-serif; font-size: 15px; font-weight: 600; color: var(--accent); font-variant-numeric: tabular-nums; padding: 18px 0; align-self: start; position: sticky; top: 64px; }
+    .pub-items { list-style: none; margin: 0; padding: 0; }
+    .pub { padding: 16px 0; border-bottom: 1px dashed var(--line); }
+    .pub:last-child { border-bottom: 0; }
+    .pub-title { font-weight: 600; color: var(--ink); line-height: 1.4; }
+    .pub-authors { font-size: 14.5px; color: var(--ink-2); margin-top: 3px; }
+    .pub-authors b { color: var(--ink); font-weight: 600; }
+    .pub-venue { font-size: 14px; color: var(--muted); margin-top: 3px; }
+    .pub-venue i { color: var(--ink-2); }
+    .badges { display: inline-flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-left: 4px; vertical-align: 1px; }
+    .badge { font-size: 11.5px; font-weight: 600; padding: 0 7px; line-height: 20px; border-radius: 5px; border: 1px solid var(--line); color: var(--ink-2); background: var(--surface); white-space: nowrap; }
+    .badge.kind { background: var(--surface-2); border-color: transparent; }
+    .badge.award { background: var(--award-soft); color: var(--award); border-color: transparent; }
+    .badge-link { font-size: 13px; font-weight: 600; }
+    .empty { padding: 24px 0; color: var(--muted); text-align: center; }
+    .pub-foot { display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: center; justify-content: space-between; margin-top: 16px; }
+    .pub-note { font-size: 13px; color: var(--muted); }
+    .metrics { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+    .metrics span { font-size: 13px; padding: 4px 10px; border-radius: 8px; background: var(--surface); border: 1px solid var(--line); color: var(--ink-2); }
+    .metrics b { color: var(--ink); font-weight: 600; }
+    /* Liste réduite : seules les publications récentes sont visibles */
+    .pubs.collapsed .pub.extra, .pubs.collapsed .pub-year.extra { display: none; }
+    @media (max-width: 600px) {
+      .pubs { padding: 4px 16px; }
+      .pub-year { grid-template-columns: 1fr; gap: 0; }
+      .year-label { position: static; padding: 16px 0 0; }
+    }
+
+    /* ===================== Encadrement ===================== */
+    .thesis { display: flex; flex-direction: column; gap: 6px; }
+    .thesis .who { font-weight: 600; font-size: 16px; }
+    .thesis .what { font-size: 15px; color: var(--ink-2); font-style: italic; }
+    .thesis .where { font-size: 13.5px; color: var(--muted); }
+    .pill { align-self: flex-start; font-size: 12px; font-weight: 600; padding: 2px 9px; border-radius: 999px; background: var(--surface-2); color: var(--ink-2); }
+    .pill.live { background: var(--accent-soft); color: var(--accent); }
+    details.more { margin-top: 20px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; }
+    details.more summary { cursor: pointer; padding: 16px 20px; font-weight: 600; list-style: none; display: flex; align-items: center; gap: 10px; }
+    details.more summary::-webkit-details-marker { display: none; }
+    details.more summary::before { content: ""; width: 8px; height: 8px; border-right: 2px solid var(--muted); border-bottom: 2px solid var(--muted); transform: rotate(-45deg); transition: transform .15s; flex: none; }
+    details.more[open] summary::before { transform: rotate(45deg); }
+    details.more summary .muted { font-weight: 400; }
+    .table-wrap { overflow-x: auto; padding: 0 20px 16px; }
+    table { width: 100%; border-collapse: collapse; font-size: 14.5px; }
+    th { text-align: left; font-size: 12.5px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; padding: 8px 12px 8px 0; border-bottom: 1px solid var(--line); }
+    td { padding: 10px 12px 10px 0; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--ink-2); }
+    tr:last-child td { border-bottom: 0; }
+    td.nowrap { white-space: nowrap; font-variant-numeric: tabular-nums; }
+    td .co { display: block; font-size: 13px; color: var(--muted); }
+    .counts { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 20px; }
+    @media (max-width: 720px) { .counts { grid-template-columns: repeat(2, 1fr); } }
+
+    /* ===================== Enseignement ===================== */
+    .course-list li { display: flex; justify-content: space-between; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--line); font-size: 15px; }
+    .course-list li:last-child { border-bottom: 0; }
+    .course-list .yrs { font-size: 13px; color: var(--muted); white-space: nowrap; font-variant-numeric: tabular-nums; padding-top: 2px; }
+    .level { font-size: 12px; font-weight: 600; color: var(--accent); text-transform: uppercase; letter-spacing: .06em; }
+    .now-list li { display: flex; gap: 12px; align-items: baseline; padding: 10px 0; border-bottom: 1px solid var(--line); }
+    .now-list li:last-child { border-bottom: 0; }
+    .now-list .lvl { flex: none; width: 92px; font-size: 13px; font-weight: 600; color: var(--muted); }
+    .card h4 { font-size: 16px; margin: 0 0 6px; }
+
+    /* ===================== Vie universitaire ===================== */
+    .committee { display: flex; flex-wrap: wrap; gap: 8px; }
+    .committee span { font-size: 13.5px; padding: 6px 12px; border-radius: 8px; background: var(--surface); border: 1px solid var(--line); color: var(--ink-2); }
+    .committee b { color: var(--ink); font-weight: 600; }
+    .plain-list li { padding: 10px 0; border-bottom: 1px solid var(--line); font-size: 15px; color: var(--ink-2); }
+    .plain-list li:last-child { border-bottom: 0; }
+    .plain-list b { color: var(--ink); font-weight: 600; }
+    .plain-list .d { display: block; font-size: 13px; color: var(--accent); font-weight: 600; font-variant-numeric: tabular-nums; }
+
+    /* ===================== Contact & pied de page ===================== */
+    .contact { display: grid; grid-template-columns: 1.2fr 1fr; gap: 16px; }
+    @media (max-width: 720px) { .contact { grid-template-columns: 1fr; } }
+    .contact-row { display: flex; gap: 14px; align-items: flex-start; padding: 12px 0; border-bottom: 1px solid var(--line); }
+    .contact-row:last-child { border-bottom: 0; }
+    .contact-row svg { flex: none; width: 20px; height: 20px; color: var(--accent); margin-top: 2px; }
+    .contact-row .k { font-size: 13px; color: var(--muted); }
+    .contact-row a, .contact-row .v { font-weight: 500; word-break: break-word; }
+    footer { padding: 32px 0 48px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13.5px; }
+    footer .wrap { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; }
+
+    @media print {
+      .topbar, .toolbar, .actions { display: none !important; }
+      details.more { border: 0; }
+      section.block { padding: 24px 0; break-inside: avoid-page; }
+      body { background: #fff; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#contenu">Aller au contenu</a>
+
+  <!-- ===================== Barre de navigation ===================== -->
+  <header class="topbar">
+    <div class="wrap">
+      <a class="brand" href="#profil">Faiza Ghozzi</a>
+      <nav class="nav" id="nav" aria-label="Navigation principale">
+        <a href="#profil">Profil</a>
+        <a href="#parcours">Parcours</a>
+        <a href="#recherche">Recherche</a>
+        <a href="#publications">Publications</a>
+        <a href="#encadrement">Encadrement</a>
+        <a href="#enseignement">Enseignement</a>
+        <a href="#vie-universitaire">Vie universitaire</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="icon-btn theme-btn" id="themeBtn" type="button" aria-label="Changer de thème (clair / sombre)">
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+      <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="contenu">
+
+    <!-- ===================== Profil ===================== -->
+    <section class="hero" id="profil">
+      <div class="wrap">
+        <div class="hero-grid">
+          <!-- Pour ajouter votre photo : déposez un fichier « photo.jpg » à côté de ce fichier index.html -->
+          <div class="avatar">
+            <span aria-hidden="true">FG</span>
+            <img src="photo.jpg" alt="Portrait de Faiza Ghozzi" width="400" height="400" fetchpriority="high" onerror="this.remove()">
+          </div>
+          <div>
+            <p class="eyebrow">Enseignante-chercheuse en informatique</p>
+            <h1>Faiza Ghozzi</h1>
+            <p class="alt-name">Faiza Ghozzi épouse Jedidi</p>
+            <p class="role">Maître assistante · Directrice du département Sciences Informatique et Multimédia</p>
+            <p class="org">
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V10l7-5 7 5v11M9 21v-6h6v6"/></svg>ISIMS, Université de Sfax</span>
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 1.8 3h10.4a2 2 0 0 0 1.8-3l-5-9V3"/></svg>Laboratoire MIRACL</span>
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>Sfax, Tunisie</span>
+            </p>
+            <p class="bio">
+              Docteure de l'Université Paul Sabatier – Toulouse III (IRIT, 2004), je consacre mes travaux à l'ingénierie
+              des systèmes décisionnels : entrepôts de données, processus ETL, intégration de données massives
+              (Big Data, NoSQL) et alignement sémantique, en lien avec l'IA générative. J'enseigne à l'ISIMS
+              depuis 2009 et je dirige son département Sciences Informatique et Multimédia depuis 2020.
+            </p>
+            <div class="chips" aria-label="Thèmes de recherche">
+              <span class="chip">Entrepôts de données</span>
+              <span class="chip">Processus ETL</span>
+              <span class="chip">Big Data &amp; NoSQL</span>
+              <span class="chip">Social Business Intelligence</span>
+              <span class="chip">Analyse de sentiments</span>
+              <span class="chip">Alignement d'ontologies</span>
+              <span class="chip">IA générative</span>
+            </div>
+            <div class="actions">
+              <a class="btn primary" href="mailto:faiza.ghozzi@isims.usf.tn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+                Me contacter
+              </a>
+              <a class="btn" href="#publications">Publications</a>
+              <a class="btn" href="https://isimsf.rnu.tn/fra/profil/Ghozzi_Faiza" target="_blank" rel="noopener">Page ISIMS</a>
+              <a class="btn" href="https://theses.hal.science/tel-00549421/" target="_blank" rel="noopener">Thèse (HAL)</a>
+              <!-- Profils à ajouter quand vous aurez les liens (retirez les balises de commentaire) :
+              <a class="btn" href="https://orcid.org/0000-0000-0000-0000" target="_blank" rel="noopener">ORCID</a>
+              <a class="btn" href="https://scholar.google.com/citations?user=XXXX" target="_blank" rel="noopener">Google Scholar</a>
+              -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Chiffres clés -->
+        <div class="stats" aria-label="Chiffres clés">
+          <div class="stat"><div class="value">11</div><div class="label">Articles de revues internationales</div></div>
+          <div class="stat"><div class="value">31</div><div class="label">Communications internationales</div></div>
+          <div class="stat"><div class="value">7</div><div class="label">Thèses co-encadrées soutenues</div></div>
+          <div class="stat"><div class="value">24</div><div class="label">Mastères de recherche encadrés</div></div>
+          <div class="stat"><div class="value">13</div><div class="label">h-index</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Parcours ===================== -->
+    <section class="block" id="parcours">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="num">01 · Parcours</div>
+          <h2>Carrière et formation</h2>
+        </div>
+        <div class="grid-2">
+          <div class="card">
+            <h3 class="sub">Carrière</h3>
+            <ul class="timeline">
+              <li class="now"><div class="t-date">Depuis 2010</div><div class="t-title">Maître assistante en informatique</div><div class="t-desc">ISIMS, Université de Sfax</div></li>
+              <li><div class="t-date">2005 – 2010</div><div class="t-title">Maître assistante en informatique</div><div class="t-desc">Institut Supérieur d'Informatique et de Multimédia de Gabès, Université de Gabès</div></li>
+              <li><div class="t-date">2003 – 2005</div><div class="t-title">Attachée temporaire d'enseignement et de recherche (ATER)</div><div class="t-desc">Université des Sciences Sociales – Toulouse I</div></li>
+              <li><div class="t-date">2001 – 2003</div><div class="t-title">Monitrice allocataire (CIES)</div><div class="t-desc">Université Paul Sabatier – Toulouse III</div></li>
+              <li><div class="t-date">2000 – 2001</div><div class="t-title">Vacataire allocataire</div><div class="t-desc">Université Paul Sabatier et École Nationale Supérieure Agronomique de Toulouse</div></li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3 class="sub">Diplômes</h3>
+            <ul class="timeline">
+              <li><div class="t-date">2004</div><div class="t-title">Doctorat en informatique — mention Très honorable</div><div class="t-desc">« Conception et manipulation de bases de données dimensionnelles à contraintes ». Université Paul Sabatier – Toulouse III, IRIT. Direction : Pr Gilles Zurfluh.</div></li>
+              <li><div class="t-date">2000</div><div class="t-title">DEA Informatique de l'Image et du Langage — mention Bien</div><div class="t-desc">« Gestion des données temporelles et de l'archivage dans les entrepôts de données complexes ». Université Paul Sabatier – Toulouse III, IRIT.</div></li>
+              <li><div class="t-date">1999</div><div class="t-title">Maîtrise en informatique appliquée à la gestion — mention Bien</div><div class="t-desc">Faculté des Sciences Économiques et de Gestion de Sfax</div></li>
+              <li><div class="t-date">1995</div><div class="t-title">Baccalauréat, section Mathématiques</div><div class="t-desc">Lycée Ali Belhouane, Sfax</div></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Recherche ===================== -->
+    <section class="block" id="recherche">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="num">02 · Recherche</div>
+          <h2>Axes de recherche</h2>
+          <p>Mes travaux, menés au laboratoire MIRACL, portent sur l'ingénierie des systèmes décisionnels. Ils accompagnent le passage des entrepôts de données classiques vers des données massives, hétérogènes et produites en temps réel.</p>
+        </div>
+
+        <div class="grid-2">
+          <article class="card axis">
+            <span class="tag">Axe 1</span>
+            <h3>Processus ETL, Social Webhouse et Big Data</h3>
+            <p>Du Data Warehouse traditionnel au Social Data Warehouse : intégrer les contenus générés par les utilisateurs (UGC), extraire des hiérarchies de thèmes, analyser l'opinion, et adapter les processus ETL à MapReduce, au streaming et aux grands modèles de langage (LLM).</p>
+            <div class="tools"><span>ETL4Social</span><span>BigDimETL</span><span>BigRealELT</span><span>UGC-StreamETL</span></div>
+          </article>
+          <article class="card axis">
+            <span class="tag">Axe 2</span>
+            <h3>Sécurité, qualité et évolution des processus ETL</h3>
+            <p>Intégrer la sécurité dès la conception (<em>Security by Design</em>) : anticiper les vulnérabilités à partir de la base NVD, les mesurer et les prioriser, gérer la véracité des données et les évolutions des schémas d'entrepôts.</p>
+            <div class="tools"><span>GQVM-ETL</span><span>AppVE</span><span>VPriority</span><span>Veracity Index</span></div>
+          </article>
+          <article class="card axis">
+            <span class="tag">Axe 3</span>
+            <h3>Données NoSQL et Internet des objets</h3>
+            <p>Modéliser et interroger des bases NoSQL orientées documents et colonnes malgré leur hétérogénéité structurelle : inférence de schémas, réécriture automatique de requêtes, et architectures décisionnelles pour l'IoT.</p>
+            <div class="tools"><span>EasyQ</span><span>Cassandra</span><span>MongoDB</span><span>IIoT &amp; blockchain</span></div>
+          </article>
+          <article class="card axis">
+            <span class="tag">Axe 4</span>
+            <h3>Alignement sémantique, séries temporelles et IA générative</h3>
+            <p>Aligner des ontologies biomédicales à grande échelle par apprentissage automatique, apparier des graphes, détecter des anomalies dans des séries temporelles par règles interprétables, et aligner des données hétérogènes par IA générative.</p>
+            <div class="tools"><span>POMap++</span><span>CoRP</span><span>CDT</span><span>Graphes de connaissances</span></div>
+          </article>
+        </div>
+
+        <h3 class="sub">Projets</h3>
+        <div class="grid-2">
+          <div class="card project">
+            <div class="period">2024 – 2027 · Projet BWS plus (Allemagne)</div>
+            <h4>International Cooperation on Digital Twin Projects (IC DT-P)</h4>
+            <p>Hochschule Karlsruhe (Allemagne), GUtech (Oman), ISIMS (Tunisie)</p>
+          </div>
+          <div class="card project">
+            <div class="period">2023 – 2024 · Projet DAAD (Allemagne)</div>
+            <h4>Virtual Exhibition Space for Technical Historical Objects (VES)</h4>
+            <p>Partenaires en Oman, en Tunisie et en Malaisie</p>
+          </div>
+          <div class="card project">
+            <div class="period">2020 – 2023 · Projet BWS plus (Allemagne)</div>
+            <h4>International Cooperation on VR/AR Projects (IC xR-P)</h4>
+            <p>Partenaires en Allemagne, en Tunisie et en Finlande</p>
+          </div>
+          <div class="card project">
+            <div class="period">2019 – 2023 · Programme national PAQ-DGSE</div>
+            <h4>Améliorer la qualité des formations et l'employabilité des diplômés de l'ISIMS</h4>
+            <p>Coordinatrice du domaine Qualité et Accréditation ; responsable du domaine « Gestion et gouvernance »</p>
+          </div>
+        </div>
+
+        <h3 class="sub">Distinctions</h3>
+        <div class="card">
+          <ul class="awards">
+            <li>
+              <span class="medal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="6"/><path d="m8.5 14-1.5 8 5-3 5 3-1.5-8"/></svg></span>
+              <div><b>Best Student Paper Award — ICEIS 2018</b><div class="small muted">« Querying Heterogeneous Document Stores », avec H. Ben Hamadou, A. Péninou et O. Teste</div></div>
+            </li>
+            <li>
+              <span class="medal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="6"/><path d="m8.5 14-1.5 8 5-3 5 3-1.5-8"/></svg></span>
+              <div><b>Prix « Article académique » — EGC 2018</b><div class="small muted">« Interrogation de données structurellement hétérogènes dans les bases de données orientées documents »</div></div>
+            </li>
+            <li>
+              <span class="medal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="6"/><path d="m8.5 14-1.5 8 5-3 5 3-1.5-8"/></svg></span>
+              <div><b>Parmi les dix meilleurs articles — ACM DOLAP 2010</b><div class="small muted">« Multiversion data warehouse constraints », avec I. Zouari Turki et R. Bouaziz</div></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Publications ===================== -->
+    <section class="block" id="publications">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="num">03 · Publications</div>
+          <h2>Publications</h2>
+          <p>11 articles de revues internationales, 31 communications dans des conférences internationales et 4 dans des conférences nationales.</p>
+          <div class="metrics" aria-label="Indicateurs de qualité">
+            <span>Revues : <b>2 Q1</b> · <b>2 Q2</b> · <b>3 Q3</b> · <b>2 Q4</b></span>
+            <span>Conférences : <b>1 CORE A</b> · <b>10 CORE B</b> · <b>14 CORE C</b></span>
+            <span><b>3</b> prix et distinctions</span>
+          </div>
+        </div>
+
+        <div class="toolbar">
+          <div class="seg" role="group" aria-label="Filtrer par type">
+            <button type="button" data-filter="all" aria-pressed="true">Toutes<span class="n"></span></button>
+            <button type="button" data-filter="journal" aria-pressed="false">Revues<span class="n"></span></button>
+            <button type="button" data-filter="intl" aria-pressed="false">Conférences internationales<span class="n"></span></button>
+            <button type="button" data-filter="natl" aria-pressed="false">Conférences nationales<span class="n"></span></button>
+            <button type="button" data-filter="thesis" aria-pressed="false">Thèse<span class="n"></span></button>
+          </div>
+          <label class="search">
+            <span class="sr-only">Rechercher une publication</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+            <input type="search" id="pubSearch" placeholder="Titre, auteur, revue, année…" autocomplete="off">
+          </label>
+        </div>
+
+        <!--
+          Pour ajouter une publication : copiez un bloc <li class="pub" ...> ... </li>
+          data-type = journal | intl | natl | thesis
+        -->
+        <div class="pubs" id="pubList">
+          <div class="pub-year">
+            <h3 class="year-label">2025</h3>
+            <ol class="pub-items">
+              <li class="pub" data-type="journal">
+                <p class="pub-title">Tweets opinion analysis integration: ETL modeling with MapReduce</p>
+                <p class="pub-authors">Afef Walha, Hana Mallek, <b>Faiza Ghozzi</b>, Faïez Gargouri</p>
+                <p class="pub-venue"><i>Cluster Computing</i>, 28(5): 286 <span class="badges"><span class="badge kind">Revue</span><span class="badge">Q1</span><a class="badge-link" href="https://doi.org/10.1007/s10586-024-04983-6" target="_blank" rel="noopener">DOI</a></span></p>
+              </li>
+              <li class="pub" data-type="journal">
+                <p class="pub-title">Toward a New Approach for Real-Time and Semantic Big Data Integration</p>
+                <p class="pub-authors">Hana Mallek, Leila Bayoudhi, <b>Faiza Ghozzi</b>, Faïez Gargouri</p>
+                <p class="pub-venue"><i>International Journal of Computer Information Systems and Industrial Management Applications (IJCISIM)</i>, 17: 131–142 <span class="badges"><span class="badge kind">Revue</span><span class="badge">Q3</span></span></p>
+              </li>
+            </ol>
+          </div>
+          <div class="pub-year">
+            <h3 class="year-label">2024</h3>
+            <ol class="pub-items">
+              <li class="pub" data-type="journal">
+                <p class="pub-title">Data integration from traditional to big data: main features and comparisons of ETL approaches</p>
+                <p class="pub-authors">Afef Walha, <b>Faiza Ghozzi</b>, Faïez Gargouri</p>
+                <p class="pub-venue"><i>The Journal of Supercomputing</i>, 80(19): 26687–26725 <span class="badges"><span class="badge kind">Revue</span><span class="badge">Q2</span><a class="badge-link" href="https://doi.org/10.1007/s11227-024-06413-1" target="_blank" rel="noopener">DOI</a></span></p>
+              </li>
+              <li class="pub" data-type="intl">
+                <p class="pub-title">Extract-Transform-Load Process for Recognizing Sentiment from User-Generated Text on Social Media</p>
+                <p class="pub-authors">Afef Walha, <b>Faïza Ghozzi</b>, Faïez Gargouri</p>
+                <p class="pub-venue"><i>ENASE 2024 — 19th Int. Conf. on Evaluation of Novel Approaches to Software Engineering</i>, 641–648 <span class="badges"><span class="badge kind">Conférence</span><span class="badge">CORE B</span><a class="badge-link" href="https://doi.org/10.5220/0012706100003687" target="_blank" rel="noopener">DOI</a></span></p>
+              </li>
+              <li class="pub" data-type="intl">
+                <p class="pub-title">A Survey on Real-Time and Semantic ETL for Big Data integration</p>
+                <p class="pub-authors">Hana Mallek, Leila Bayoudhi, <b>Faiza Ghozzi</b>, Faïez Gargouri</p>
+                <p class="pub-venue"><i>KES 2024 — 28th Int. Conf. on Knowledge-Based and Intelligent Information &amp; Engineering Systems</i>, Procedia Computer Science <span class="badges"><span class="badge kind">Conférence</span><span class="badge">CORE B</span></span></p>
+              </li>
+            </ol>
+          </div>
+          <div class="pub-year">
+            <h3 class="year-label">2023</h3>
+            <ol class="pub-items">
+              <li class="pub" data-type="journal">
+                <p class="pub-title">Conceptual modeling of big data SPJ operations with Twitter social medium</p>
+                <p class="pub-authors">Hana Mallek, <b>Faiza Ghozzi</b>, Faïez Gargouri</p>
+                <p class="pub-venue"><i>Social Network Analysis and Mining</i>, 13(1): 105 <span class="badges"><span class="badge kind">Revue</span><span class="badge">Q2</span><a class="badge-link" href="https://doi.org/10.1007/s13278-023-01112-w" target="_blank" rel="noopener">DOI</a></span></p>
+              </li>
+              <li class="pub" data-type="journal">
+                <p class="pub-title">Conceptual modeling of Big Data extraction phase</p>
+                <p class="pub-authors">Hana Mallek, <b>Faiza Ghozzi</b>, Faïez Gargouri</p>
+                <p class="pub-venue"><i>International Journal of Hybrid Intelligent Systems</i>, 19(3-4): 167–182 <span class="badges"><span class="badge kind">Revue</span><span class="badge">Scopus</span><a class="badge-link" href="https://doi.org/10.3233/HIS-230008" target="_blank" rel="noopener">DOI</a></span></p>
+              </li>
+              <li class="pub" data-type="intl">
+                <p class="pub-title">Real-Time ETL for multimedia sources: A systematic literature review</p>
+                <p class="pub-authors">Hana Mallek, <b>Faiza Ghozzi</b>, Faïez Gargouri</p>
+                <p class="pub-venue"><i>ISDA 2023 — 23rd Int. Conf. on Intelligent Systems Design and Applications</i>, LNNS, Springer <span class="badges"><span class="badge kind">Conférence</span><span class="badge">CORE C</span><a class="badge-link" href="https://doi.org/10.1007/978-3-031-64850-2_6" target="_blank" rel="noopener">DOI</a></span></p>
+              </li>
+              <li class="pub" data-type="intl">
+                <p class="pub-title">Conversion Operation: From Semi-structured Collection of Documents to Column-Oriented Structure</p>
+                <p class="pub-authors">Hana Mallek, <b>Faiza Ghozzi</b>, Faïez Gargouri</p>
+                <p class="pub-venue"><i>HIS 2022 — 22nd Int. Conf. on Hybrid Intelligent Systems</i>, LNNS 647, Springer, 585–594 <span class="badges"><span class="badge kind">Conférence</span><span class="badge">CORE C</span><a class="badge-link" href="https://doi.org/10.1007/978-3-031-27409-1_53" target="_blank" rel="noopener">DOI</a></span></p>
+              </li>
+            </ol>
+          </div>
+          <div class="pub-year">
+            <h3 class="year-label">2022</h3>
+            <ol class="pub-items">
+              <li class="pub" data-type="journal">
+                <p class="pub-title">Managing vulnerabilities during the development of a secure ETL processes</p>
+                <p class="pub-authors">Salma Dammak, <b>Faiza Ghozzi</b>, Asma Sellami, Faïez Gargouri</p>
+                <p class="pub-venue"><i>International Journal of Information and Computer Security</i>, 18(1/2): 75–104 <span class="badges"><span class="badge kind">Revue</span><span class="badge">Q3</span><a class="badge-link" href="https://doi.org/10.1504/IJICS.2022.122914" target="_blank" rel="noopener">DOI</a></span></p>
+              </li>
+            </ol>
+          </div>
+          <div class="pub-year">
+            <h3 class="year-label">2021</h3>
+            <ol class="pub-items">
+              <li class="pub" data-type="intl">
+                <p class="pub-title">Human-Interpretable Rules for Anomaly Detection in Time-series</p>
+                <p class="pub-authors">Ines Ben Kraiem, <b>Faiza Ghozzi</b>, André Péninou, Geoffrey Roman-Jimenez, Olivier Teste</p>
+                <p class="pub-venue"><i>EDBT 2021 — 24th Int. Conf. on Extending Database Technology</i>, 457–462 <span class="badges"><span class="badge kind">Conférence</span><span class="badge">CORE A</span><a class="badge-link" href="https://doi.org/10.5441/002/edbt.2021.51" target="_blank" rel="noopener">DOI</a></span></p>
+              </li>
+              <li class="pub" data-type="intl">
+                <p class="pub-title">Design and Execution of ETL Process to Build Topic Dimension from User-Generated Content</p>
+                <p class="pub-authors">Afef Walha, <b>Faiza Ghozzi</b>, Faïez Gargouri</p>
+                <p class="pub-venue"><i>RCIS 2021 — Research Challenges in Information Science</i>, LNBIP 415, Springer, 374–389 <span class="badges"><span class="badge kind">Conférence</span><span class="badge">CORE B</span><a class="badge-link" href="https://doi.org/10.1007/978-3-030-75018-3_25" target="_blank" rel="noopener">DOI</a></span></p>
+              </li>
+            </ol>
+          </div>
+          <div class="pub-year">
+            <h3 class="year-label">2020</h3>
+            <ol class="pub-items">
+              <li class="pub" data-type="journal">
+                <p class="pub-title">Towards Extract-Transform-Load Operations in a Big Data context</p>
+                <p class="pub-authors">Hana Mallek, <b>Faiza Ghozzi</b>, Faïez Gargouri</p>
+                <p class="pub-venue"><i>International Journal of Sociotechnology and Knowledge Development</i>, 12(2): 77–95 <span class="badges"><span class="badge kind">Revue</span><span class="badge">Q3</span><a class="badge-link" href="https://doi.org/10.4018/IJSKD.2020040105" target="_blank" rel="noopener">DOI</a></span></p>
+              </li>
+            </ol>
+          </div>
+          <div class="pub-year">
+            <h3 class="year-label">2019</h3>
+            <ol class="pub-items">
+              <li class="pub" data-type="journal">
+                <p class="pub-title">Schema-independent querying for heterogeneous collections in NoSQL document stores</p>
+                <p class="pub-authors">Hamdi Ben Hamadou, <b>Faiza Ghozzi</b>, André Péninou, Olivier Teste</p>
+                <p class="pub-venue"><i>Information Systems</i>, 85: 48–67 <span class="badges"><span class="badge kind">Revue</span><span class="badge">Q1</span><a class="badge-link" href="https://doi.org/10.1016/j.is.2019.04.005" target="_blank" rel="noopener">DOI</a></span></p>
+              </li>
+              <li class="pub" data-type="journal">
+                <p class="pub-title">From user generated content to social data warehouse: processes, operations and data modelling</p>
+                <p class="pub-authors">Afef Walha, <b>Faiza Ghozzi</b>, Faïez Gargouri</p>
+                <p class="pub-venue"><i>International Journal of Web Engineering and Technology</i>, 14(3): 203–230 <span class="badges"><span class="badge kind">Revue</span><span class="badge">Q4</span><a class="badge-link" href="https://doi.org/10.1504/IJWET.2019.105589" target="_blank" rel="noopener">DOI</a></span></p>
+              </li>
+              <li class="pub" data-type="journal">
+                <p class="pub-title">ETL Processes Security Modeling</p>
+                <p class="pub-authors">Salma Dammak, <b>Faiza Ghozzi</b>, Faïez Gargouri</p>
+                <p class="pub-venue"><i>International Journal of Information System Modeling and Design</i>, 10(1): 60–84 <span class="badges"><span class="badge kind">Revue</span><span class="badge">Q4</span><a class="badge-link" href="https://doi.org/10.4018/IJISMD.2019010104" target="_blank" rel="noopener">DOI</a></span></p>
+              </li>
+              <li class="pub" data-type="intl">
+                <p class="pub-title">The Impact of Imbalanced Training Data on Local Matching Learning of Ontologies</p>
+                <p class="pub-authors">Amir Laadhar, <b>Faiza Ghozzi</b>, Imen Megdiche, Franck Ravat, Olivier Teste, Faïez Gargouri</p>
+                <p class="pub-venue"><i>BIS 2019 — 22nd Int. Conf. on Business Information Systems</i>, LNBIP 353, Springer, 162–175 <span class="badges"><span class="badge kind">Conférence</span><span class="badge">CORE B</span><a class="badge-link" href="https://doi.org/10.1007/978-3-030-20485-3_13" target="_blank" rel="noopener">DOI</a></span></p>
+              </li>
+              <li class="pub" data-type="intl">
+                <p class="pub-title">Pattern-based Method for Anomaly Detection in Sensor Networks</p>
+                <p class="pub-authors">Ines Ben Kraiem, <b>Faiza Ghozzi</b>, André Péninou, Olivier Teste</p>
+                <p class="pub-venue"><i>ICEIS 2019 — 21st Int. Conf. on Enterprise Information Systems</i>, vol. 1, SciTePress, 104–113 <span class="badges"><span class="badge kind">Conférence</span><span class="badge">CORE C</span><a class="badge-link" href="https://doi.org/10.5220/0007736701040113" target="_blank" rel="noopener">DOI</a></span></p>
+              </li>
+              <li class="pub" data-type="intl">
+                <p class="pub-title">Ontology Alignment using Stable Matching</p>
+                <p class="pub-authors">Imene Ouali, <b>Faiza Ghozzi</b>, Raouia Taktak, Mohamed Saifeddine Hadj Sassi</p>
+                <p class="pub-venue"><i>KES 2019 — 23rd Int. Conf. on Knowledge-Based and Intelligent Information &amp; Engineering Systems</i>, Procedia Computer Science 159, 746–755 <span class="badges"><span class="badge kind">Conférence</span><span class="badge">CORE B</span><a class="badge-link" href="https://doi.org/10.1016/j.procs.2019.09.230" target="_blank" rel="noopener">DOI</a></span></p>
+              </li>
+              <li class="pub" data-type="intl">
+                <p class="pub-title">Partitioning and local matching learning of large biomedical ontologies</p>
+                <p class="pub-authors">Amir Laadhar, <b>Faiza Ghozzi</b>, Imen Megdiche, Franck Ravat, Olivier Teste, Faïez Gargouri</p>
+                <p class="pub-venue"><i>SAC 2019 — 34th ACM/SIGAPP Symposium on Applied Computing</i>, ACM, 2285–2292 <span class="badges"><span class="badge kind">Conférence</span><span class="badge">CORE B</span><a class="badge-link" href="https://doi.org/10.1145/3297280.3297507" target="_blank" rel="noopener">DOI</a></span></p>
+              </li>
+              <li class="pub" data-type="intl">
+                <p class="pub-title">POMap++ Results for OAEI 2019: Fully Automated Machine Learning Approach for Ontology Matching</p>
+                <p class="pub-authors">Amir Laadhar, <b>Faiza Ghozzi</b>, Imen Megdiche, Franck Ravat, Olivier Teste, Faïez Gargouri</p>
+                <p class="pub-venue"><i>OM 2019 — 14th Int. Workshop on Ontology Matching (ISWC 2019)</i>, CEUR Workshop Proceedings, 169–174 <span class="badges"><span class="badge kind">Conférence</span></span></p>
+              </li>
+              <li class="pub" data-type="intl">
+                <p class="pub-title">Schema-Independent Querying and Manipulation for Heterogeneous Collections in NoSQL Document Stores</p>
+                <p class="pub-authors">Hamdi Ben Hamadou, <b>Faiza Ghozzi</b>, André Péninou, Olivier Teste</p>
+                <p class="pub-venue"><i>Enterprise Information Systems — ICEIS 2018 Revised Selected Papers</i>, LNBIP 363, Springer, 324–349 <span class="badges"><span class="badge kind">Conférence</span><span class="badge">CORE C</span><a class="badge-link" href="https://doi.org/10.1007/978-3-030-26169-6_16" target="_blank" rel="noopener">DOI</a></span></p>
+              </li>
+            </ol>
+          </div>
+          <div class="pub-year">
+            <h3 class="year-label">2018</h3>
+            <ol class="pub-items">
+              <li class="pub" data-type="intl">
+                <p class="pub-title">Towards Schema-independent Querying on Document Data Stores</p>
+                <p class="pub-authors">Hamdi Ben Hamadou, <b>Faiza Ghozzi</b>, André Péninou, Olivier Teste</p>
+                <p class="pub-venue"><i>DOLAP 2018 — 20th Int. Workshop on Design, Optimization, Languages and Analytical Processing of Big Data (EDBT/ICDT 2018)</i>, CEUR Workshop Proceedings <span class="badges"><span class="badge kind">Conférence</span><span class="badge">CORE B</span></span></p>
+              </li>
+              <li class="pub" data-type="intl">
+                <p class="pub-title">Querying Heterogeneous Document Stores</p>
+                <p class="pub-authors">Hamdi Ben Hamadou, <b>Faiza Ghozzi</b>, André Péninou, Olivier Teste</p>
+                <p class="pub-venue"><i>ICEIS 2018 — 20th Int. Conf. on Enterprise Information Systems</i>, vol. 1, SciTePress, 58–68 <span class="badges"><span class="badge kind">Conférence</span><span class="badge">CORE C</span><span class="badge award">Best Student Paper Award</span><a class="badge-link" href="https://doi.org/10.5220/0006777800580068" target="_blank" rel="noopener">DOI</a></span></p>
+              </li>
+              <li class="pub" data-type="intl">
+                <p class="pub-title">BigDimETL with NoSQL Database</p>
+                <p class="pub-authors">Hana Mallek, <b>Faiza Ghozzi</b>, Olivier Teste, Faïez Gargouri</p>
+                <p class="pub-venue"><i>KES 2018 — 22nd Int. Conf. on Knowledge-Based and Intelligent Information &amp; Engineering Systems</i>, Procedia Computer Science 126, 798–807 <span class="badges"><span class="badge kind">Conférence</span><span class="badge">CORE B</span><a class="badge-link" href="https://doi.org/10.1016/j.procs.2018.08.014" target="_blank" rel="noopener">DOI</a></span></p>
+              </li>
+              <li class="pub" data-type="natl">
+                <p class="pub-title">Interrogation de données structurellement hétérogènes dans les bases de données orientées documents</p>
+                <p class="pub-authors">Hamdi Ben Hamadou, <b>Faiza Ghozzi</b>, André Péninou, Olivier Teste</p>
+                <p class="pub-venue"><i>EGC 2018 — 18es Journées francophones Extraction et Gestion des Connaissances</i>, RNTI E-34, 155–166 <span class="badges"><span class="badge kind">Conférence nationale</span><span class="badge award">Prix « Article académique »</span></span></p>
+              </li>
+            </ol>
+          </div>
+          <div class="pub-year">
+            <h3 class="year-label">2017</h3>
+            <ol class="pub-items">
+              <li class="pub" data-type="intl">
+                <p class="pub-title">Matching Procedure for NVD Vulnerabilities to Secure ETL Processes Steps</p>
+                <p class="pub-authors">Salma Dammak, <b>Faiza Ghozzi</b>, Faïez Gargouri</p>
+                <p class="pub-venue"><i>AICCSA 2017 — 14th IEEE/ACS Int. Conf. on Computer Systems and Applications</i>, 1322–1329 <span class="badges"><span class="badge kind">Conférence</span><span class="badge">CORE C</span><a class="badge-link" href="https://doi.org/10.1109/AICCSA.2017.65" target="_blank" rel="noopener">DOI</a></span></p>
+              </li>
+              <li class="pub" data-type="intl">
+                <p class="pub-title">ETL4Social-Data: Modeling Approach for Topic Hierarchy</p>
+                <p class="pub-authors">Afef Walha, <b>Faiza Ghozzi</b>, Faïez Gargouri</p>
+                <p class="pub-venue"><i>KEOD 2017 — 9th IC3K</i>, 107–118 <span class="badges"><span class="badge kind">Conférence</span><span class="badge">CORE C</span><a class="badge-link" href="https://doi.org/10.5220/0006588901070118" target="_blank" rel="noopener">DOI</a></span></p>
+              </li>
+              <li class="pub" data-type="intl">
+                <p class="pub-title">POMap: An Effective Pairwise Ontology Matching System</p>
+                <p class="pub-authors">Amir Laadhar, <b>Faiza Ghozzi</b>, Imen Megdiche, Franck Ravat, Olivier Teste, Faïez Gargouri</p>
+                <p class="pub-venue"><i>KEOD 2017 — 9th IC3K</i>, SciTePress, 161–168 <span class="badges"><span class="badge kind">Conférence</span><span class="badge">CORE C</span><a class="badge-link" href="https://doi.org/10.5220/0006492201610168" target="_blank" rel="noopener">DOI</a></span></p>
+              </li>
+              <li class="pub" data-type="intl">
+                <p class="pub-title">BigDimETL: ETL for Multidimensional Big Data</p>
+                <p class="pub-authors">Hana Mallek, <b>Faiza Ghozzi</b>, Olivier Teste, Faïez Gargouri</p>
+                <p class="pub-venue"><i>ISDA 2016 — 16th Int. Conf. on Intelligent Systems Design and Applications</i>, AISC 557, Springer, 935–944 <span class="badges"><span class="badge kind">Conférence</span><span class="badge">CORE C</span><a class="badge-link" href="https://doi.org/10.1007/978-3-319-53480-0_92" target="_blank" rel="noopener">DOI</a></span></p>
+              </li>
+            </ol>
+          </div>
+          <div class="pub-year">
+            <h3 class="year-label">2016</h3>
+            <ol class="pub-items">
+              <li class="pub" data-type="intl">
+                <p class="pub-title">A GQVM approach to secure WeBhouse ETL processes development</p>
+                <p class="pub-authors">Salma Dammak, <b>Faiza Ghozzi Jedidi</b>, Faïez Gargouri</p>
+                <p class="pub-venue"><i>AICCSA 2016 — 13th IEEE/ACS Int. Conf. of Computer Systems and Applications</i>, 1–8 <span class="badges"><span class="badge kind">Conférence</span><span class="badge">CORE C</span><a class="badge-link" href="https://doi.org/10.1109/AICCSA.2016.7945689" target="_blank" rel="noopener">DOI</a></span></p>
+              </li>
+              <li class="pub" data-type="intl">
+                <p class="pub-title">Analyses of social WeBhouse integrating SNA metrics</p>
+                <p class="pub-authors">Marwa Masmoudi, <b>Faiza Ghozzi</b></p>
+                <p class="pub-venue"><i>AICCSA 2016 — 13th IEEE/ACS Int. Conf. of Computer Systems and Applications</i>, 1–7 <span class="badges"><span class="badge kind">Conférence</span><span class="badge">CORE C</span></span></p>
+              </li>
+              <li class="pub" data-type="intl">
+                <p class="pub-title">A Lexicon approach to multidimensional analysis of tweets opinion</p>
+                <p class="pub-authors">Afef Walha, <b>Faiza Ghozzi</b>, Faïez Gargouri</p>
+                <p class="pub-venue"><i>AICCSA 2016 — 13th IEEE/ACS Int. Conf. of Computer Systems and Applications</i>, 1–8 <span class="badges"><span class="badge kind">Conférence</span><span class="badge">CORE C</span></span></p>
+              </li>
+              <li class="pub" data-type="intl">
+                <p class="pub-title">ETL Design Toward Social Network Opinion Analysis</p>
+                <p class="pub-authors">Afef Walha, <b>Faiza Ghozzi</b>, Faïez Gargouri</p>
+                <p class="pub-venue"><i>ICIS 2015 — Computer and Information Science 2015</i>, Studies in Computational Intelligence 614, Springer, 235–249 <span class="badges"><span class="badge kind">Conférence</span><a class="badge-link" href="https://doi.org/10.1007/978-3-319-23467-0_16" target="_blank" rel="noopener">DOI</a></span></p>
+              </li>
+            </ol>
+          </div>
+          <div class="pub-year">
+            <h3 class="year-label">2015</h3>
+            <ol class="pub-items">
+              <li class="pub" data-type="intl">
+                <p class="pub-title">Quantifying Security in Web ETL Processes</p>
+                <p class="pub-authors">Salma Dammak, <b>Faiza Ghozzi Jedidi</b>, Faïez Gargouri</p>
+                <p class="pub-venue"><i>CRiSIS 2015 — 10th Int. Conf. on Risks and Security of Internet and Systems</i>, LNCS 9572, Springer, 160–173 <span class="badges"><span class="badge kind">Conférence</span><span class="badge">CORE C</span><a class="badge-link" href="https://doi.org/10.1007/978-3-319-31811-0_10" target="_blank" rel="noopener">DOI</a></span></p>
+              </li>
+              <li class="pub" data-type="intl">
+                <p class="pub-title">ETL Transformation Algorithm for Facebook Opinion Data</p>
+                <p class="pub-authors">Afef Walha, <b>Faiza Ghozzi</b>, Faïez Gargouri</p>
+                <p class="pub-venue"><i>WEBIST 2015 — 11th Int. Conf. on Web Information Systems and Technologies</i>, 150–155 <span class="badges"><span class="badge kind">Conférence</span><span class="badge">CORE C</span><a class="badge-link" href="https://doi.org/10.5220/0005494101500155" target="_blank" rel="noopener">DOI</a></span></p>
+              </li>
+            </ol>
+          </div>
+          <div class="pub-year">
+            <h3 class="year-label">2014</h3>
+            <ol class="pub-items">
+              <li class="pub" data-type="intl">
+                <p class="pub-title">Summarizability in Multiversion Data Warehouse</p>
+                <p class="pub-authors">Inès Zouari Turki, <b>Faiza Ghozzi Jedidi</b>, Rafik Bouaziz</p>
+                <p class="pub-venue"><i>TIME 2014 — 21st Int. Symposium on Temporal Representation and Reasoning</i>, IEEE, 111–120 <span class="badges"><span class="badge kind">Conférence</span><span class="badge">CORE B</span></span></p>
+              </li>
+              <li class="pub" data-type="natl">
+                <p class="pub-title">ETL-Web process modeling</p>
+                <p class="pub-authors">Hana Mallek, Afef Walha, <b>Faiza Ghozzi</b>, Faïez Gargouri</p>
+                <p class="pub-venue"><i>ASD 2014 — 8th Advances on Decisional Systems Conference</i>, Hammamet, 143–154 <span class="badges"><span class="badge kind">Conférence nationale</span></span></p>
+              </li>
+              <li class="pub" data-type="natl">
+                <p class="pub-title">XACML et WS-policy pour la sécurité des données et des ETL dans un Webhouse</p>
+                <p class="pub-authors">Nesrine Zaghdoud, Salma Dammak, <b>Faiza Ghozzi</b></p>
+                <p class="pub-venue"><i>ASD 2014 — 8th Advances on Decisional Systems Conference</i>, Hammamet <span class="badges"><span class="badge kind">Conférence nationale</span></span></p>
+              </li>
+            </ol>
+          </div>
+          <div class="pub-year">
+            <h3 class="year-label">2012</h3>
+            <ol class="pub-items">
+              <li class="pub" data-type="intl">
+                <p class="pub-title">Constraints to manage consistency in multiversion data warehouse</p>
+                <p class="pub-authors">Inès Zouari Turki, <b>Faiza Ghozzi Jedidi</b>, Rafik Bouaziz</p>
+                <p class="pub-venue"><i>MIPRO 2012 — 35th Int. Convention, Business Intelligence Systems (MiproBIS)</i>, Opatija, 1607–1612 <span class="badges"><span class="badge kind">Conférence</span></span></p>
+              </li>
+            </ol>
+          </div>
+          <div class="pub-year">
+            <h3 class="year-label">2010</h3>
+            <ol class="pub-items">
+              <li class="pub" data-type="intl">
+                <p class="pub-title">Multiversion data warehouse constraints</p>
+                <p class="pub-authors">Inès Zouari Turki, <b>Faiza Ghozzi Jedidi</b>, Rafik Bouaziz</p>
+                <p class="pub-venue"><i>DOLAP 2010 — 13th ACM Int. Workshop on Data Warehousing and OLAP (CIKM 2010)</i>, ACM, 11–18 <span class="badges"><span class="badge kind">Conférence</span><span class="badge">CORE B</span><span class="badge award">Top 10 des articles</span></span></p>
+              </li>
+              <li class="pub" data-type="intl">
+                <p class="pub-title">Extension of OLAP Operators to the Multiversion Data Warehouse context</p>
+                <p class="pub-authors">Mourad Hsan, Inès Zouari, <b>Faiza Ghozzi</b>, Rafik Bouaziz</p>
+                <p class="pub-venue"><i>ACIT 2010 — Int. Arab Conf. on Information Technology</i>, session spéciale DWKD, Benghazi <span class="badges"><span class="badge kind">Conférence</span></span></p>
+              </li>
+            </ol>
+          </div>
+          <div class="pub-year">
+            <h3 class="year-label">2009</h3>
+            <ol class="pub-items">
+              <li class="pub" data-type="intl">
+                <p class="pub-title">Detection and Propagation of Complex Evolutions in Multiversion Data Warehouse</p>
+                <p class="pub-authors">Inès Zouari Turki, Hana Boukhriss, <b>Faiza Ghozzi Jedidi</b>, Rafik Bouaziz</p>
+                <p class="pub-venue"><i>ADBIS 2009 Workshops — MEDWa</i>, Riga, 266–274 <span class="badges"><span class="badge kind">Conférence</span></span></p>
+              </li>
+              <li class="pub" data-type="intl">
+                <p class="pub-title">New Evolution Operators for Multiversion Data Warehouse</p>
+                <p class="pub-authors">Inès Zouari Turki, <b>Faiza Ghozzi Jedidi</b>, Rafik Bouaziz</p>
+                <p class="pub-venue"><i>MIPRO 2009 — 32nd Int. Convention, Business Intelligence Systems (MiproBIS)</i>, Opatija, 175–180 <span class="badges"><span class="badge kind">Conférence</span></span></p>
+              </li>
+            </ol>
+          </div>
+          <div class="pub-year">
+            <h3 class="year-label">2008</h3>
+            <ol class="pub-items">
+              <li class="pub" data-type="journal">
+                <p class="pub-title">Impact de l'évolution de nomenclature sur le versionnement des entrepôts de données</p>
+                <p class="pub-authors">Inès Zouari Turki, <b>Faiza Ghozzi Jedidi</b>, Rafik Bouaziz</p>
+                <p class="pub-venue"><i>Ingénierie des Systèmes d'Information</i>, 13(6): 85–114 <span class="badges"><span class="badge kind">Revue</span></span></p>
+              </li>
+              <li class="pub" data-type="natl">
+                <p class="pub-title">Impact de l'évolution de la nomenclature des membres de dimension sur l'entrepôt de données</p>
+                <p class="pub-authors">Inès Zouari Turki, <b>Faiza Ghozzi Jedidi</b>, Rafik Bouaziz</p>
+                <p class="pub-venue"><i>EDA 2008 — 4es Journées francophones Entrepôts de Données et Analyse en ligne</i>, RNTI B-4, Cépaduès, 19–33 <span class="badges"><span class="badge kind">Conférence nationale</span></span></p>
+              </li>
+            </ol>
+          </div>
+          <div class="pub-year">
+            <h3 class="year-label">2004</h3>
+            <ol class="pub-items">
+              <li class="pub" data-type="thesis">
+                <p class="pub-title">Conception et manipulation de bases de données dimensionnelles à contraintes</p>
+                <p class="pub-authors"><b>Faiza Ghozzi</b></p>
+                <p class="pub-venue"><i>Thèse de doctorat</i>, Université Paul Sabatier – Toulouse III <span class="badges"><span class="badge kind">Thèse</span><a class="badge-link" href="https://theses.hal.science/tel-00549421/" target="_blank" rel="noopener">HAL</a></span></p>
+              </li>
+            </ol>
+          </div>
+          <div class="pub-year">
+            <h3 class="year-label">2000</h3>
+            <ol class="pub-items">
+              <li class="pub" data-type="thesis">
+                <p class="pub-title">Gestion des données temporelles et de l'archivage dans les entrepôts de données complexes</p>
+                <p class="pub-authors"><b>Faiza Ghozzi</b></p>
+                <p class="pub-venue"><i>Mémoire de DEA</i>, Université Paul Sabatier – Toulouse III <span class="badges"><span class="badge kind">Mémoire</span></span></p>
+              </li>
+            </ol>
+          </div>
+        </div>
+        <p class="empty" id="pubEmpty" hidden>Aucune publication ne correspond à cette recherche.</p>
+        <div class="pub-foot">
+          <button class="btn" type="button" id="pubMore" aria-controls="pubList" aria-expanded="false">Afficher toutes les publications</button>
+          <p class="pub-note">Quartiles : SCImago (SJR), meilleur quartile en informatique l'année de publication. Rangs de conférences : classement CORE.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Encadrement ===================== -->
+    <section class="block" id="encadrement">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="num">04 · Encadrement</div>
+          <h2>Encadrement doctoral et de mastère</h2>
+          <p>Sept thèses de doctorat co-encadrées et soutenues, dont trois en cotutelle ou en collaboration avec l'IRIT (Toulouse), et une thèse en cours.</p>
+        </div>
+
+        <div class="grid-2">
+          <article class="card thesis">
+            <span class="pill live">En cours · depuis janvier 2026</span>
+            <div class="who">Inès Taktak</div>
+            <div class="what">Alignment of Heterogeneous Data by Generative Artificial Intelligence</div>
+            <div class="where">Cotutelle Université de Sfax – Université de Toulouse</div>
+          </article>
+          <article class="card thesis">
+            <span class="pill">Soutenue le 18 novembre 2023</span>
+            <div class="who">Hana Mallek</div>
+            <div class="what">Ingénierie des processus ETL pour les Big Data</div>
+            <div class="where">FSEG Sfax</div>
+          </article>
+          <article class="card thesis">
+            <span class="pill">Soutenue le 2 octobre 2021</span>
+            <div class="who">Afef Walha Makni</div>
+            <div class="what">Approche de modélisation des processus ETL pour un entrepôt de données social</div>
+            <div class="where">FSEG Sfax</div>
+          </article>
+          <article class="card thesis">
+            <span class="pill">Soutenue le 1<sup>er</sup> octobre 2021</span>
+            <div class="who">Salma Dammak Ktari</div>
+            <div class="what">Une approche basée sur la conception et la mesure pour la prévention de la sécurité des processus ETL</div>
+            <div class="where">FSEG Sfax</div>
+          </article>
+          <article class="card thesis">
+            <span class="pill">Soutenue le 29 janvier 2021</span>
+            <div class="who">Inès Ben Kraiem</div>
+            <div class="what">Detection of Multiple Anomalies by the Automatic Learning of Rules in Time Series</div>
+            <div class="where">IRIT, Université de Toulouse</div>
+          </article>
+          <article class="card thesis">
+            <span class="pill">Soutenue le 2 octobre 2019</span>
+            <div class="who">Hamdi Ben Hamadou</div>
+            <div class="what">Querying heterogeneous data in NoSQL document stores</div>
+            <div class="where">IRIT, Université de Toulouse</div>
+          </article>
+          <article class="card thesis">
+            <span class="pill">Soutenue le 27 septembre 2019</span>
+            <div class="who">Amir Laadhar</div>
+            <div class="what">Local Matching Learning of Large Scale Biomedical Ontologies</div>
+            <div class="where">Cotutelle IRIT (Toulouse III) – Université de Sfax</div>
+          </article>
+          <article class="card thesis">
+            <span class="pill">Soutenue en 2015-2016</span>
+            <div class="who">Inès Zouari Turki</div>
+            <div class="what">Étude et édification d'un système de gestion d'entrepôts de données multiversions</div>
+            <div class="where">FSEG Sfax</div>
+          </article>
+        </div>
+
+        <details class="more">
+          <summary>Mastères de recherche encadrés <span class="muted">· 24 mémoires soutenus, 2011 – 2025</span></summary>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Année</th><th>Étudiant·e</th><th>Sujet</th><th>Mastère</th></tr></thead>
+              <tbody>
+                <tr><td class="nowrap">2025</td><td>Nada Ben Ali</td><td>Design and Development of a Real-Time ETL Pipeline on a Big Data Platform Dedicated to Sentiment Analysis in User-Generated Content<span class="co">Co-encadrement avec Afef Walha</span></td><td>MRSI</td></tr>
+                <tr><td class="nowrap">2025</td><td>Hajer Bouzayen</td><td>Conception de processus ETL sémantique dans le contexte des Big Data<span class="co">Co-encadrement avec Hana Mallek</span></td><td>MRSI</td></tr>
+                <tr><td class="nowrap">2025</td><td>Ameni Dami</td><td>Un pipeline ETL basé sur LLM pour l'analyse de sentiments appliquée aux contenus générés par les utilisateurs (UGC)<span class="co">Co-encadrement avec Afef Walha</span></td><td>MRSI</td></tr>
+                <tr><td class="nowrap">2025</td><td>Arij Nciri</td><td>Conception de processus ETL en streaming dans le cadre du traitement des Big Data<span class="co">Co-encadrement avec Hana Mallek</span></td><td>MRSI</td></tr>
+                <tr><td class="nowrap">2023</td><td>Malika Taouai</td><td>Querying data into a NoSQL data warehouse</td><td>MRESE</td></tr>
+                <tr><td class="nowrap">2023</td><td>Imed Mathlouthi</td><td>Decentralized data management system for industrial internet of things<span class="co">Co-encadrement avec Lamia Chaari</span></td><td>MRESE</td></tr>
+                <tr><td class="nowrap">2021</td><td>Hassen Drira</td><td>Towards a data veracity-aware ETL process design</td><td>MRESE</td></tr>
+                <tr><td class="nowrap">2020</td><td>Amel Hadjkacem</td><td>Proposal of an ETL framework for a social Webhouse</td><td>MRESE</td></tr>
+                <tr><td class="nowrap">2019</td><td>Ghassen Tounsi</td><td>Querying and Visualization of Heterogeneous Not Only SQL Data</td><td>MRESE</td></tr>
+                <tr><td class="nowrap">2019</td><td>Moez Mosbahi</td><td>Automatic schema inference and matching for querying heterogeneous document stores</td><td>MRESE</td></tr>
+                <tr><td class="nowrap">2018</td><td>Imen Wali</td><td>Intégration de sources de données hétérogènes par matching de graphes<span class="co">Co-encadrement avec Raouia Taktak</span></td><td>MRIM</td></tr>
+                <tr><td class="nowrap">2018</td><td>Mohamed Saifeddine Hadjsassi</td><td>Business information architecture for big data and internet of things<span class="co">Co-encadrement avec Lamia Chaari</span></td><td>MRESE</td></tr>
+                <tr><td class="nowrap">2016</td><td>Amir Laadhar</td><td>An ETL Pattern towards the semi-automatic extraction of topic hierarchy</td><td>MRESE</td></tr>
+                <tr><td class="nowrap">2016</td><td>Hamdi Ben Hamadou</td><td>Multidimensional data Warehouse under Cassandra NoSQL column-oriented databases</td><td>MRESE</td></tr>
+                <tr><td class="nowrap">2015</td><td>Maroua Masmoudi</td><td>Développement d'un Webhouse analysant les métriques du réseau social Facebook</td><td>MRIM</td></tr>
+                <tr><td class="nowrap">2015</td><td>Sameh Ammous</td><td>Modélisation de processus ETL Web sécurisés</td><td>MRIM</td></tr>
+                <tr><td class="nowrap">2015</td><td>Yesmine Kammoun</td><td>Gestion des évolutions dans les processus ETL</td><td>MRIM</td></tr>
+                <tr><td class="nowrap">2014</td><td>Nesrine Zaghdoud</td><td>Approche dirigée par les modèles pour la sécurité des Webhouses</td><td>MRI (ISIM Gabès)</td></tr>
+                <tr><td class="nowrap">2014</td><td>Ghassen Hamdi</td><td>Personnalisation des requêtes OLAP pour une visualisation hiérarchique des contraintes</td><td>MRIM</td></tr>
+                <tr><td class="nowrap">2013</td><td>Sirine Mrabet Hammami</td><td>Modélisation d'un Webhouse analysant l'activité des membres de réseaux sociaux</td><td>MRIM</td></tr>
+                <tr><td class="nowrap">2013</td><td>Hana Mallek</td><td>Langage de modélisation des processus ETL intégrant les logs web</td><td>MRIM</td></tr>
+                <tr><td class="nowrap">2012</td><td>Fawzi Faidi</td><td>Fonctions OLAP pour l'extension du langage XQuery</td><td>FSEG Sfax</td></tr>
+                <tr><td class="nowrap">2011</td><td>Afef Walha Makni</td><td>Conception d'un Data Webhouse personnalisé à base d'ontologie</td><td>MRIM</td></tr>
+                <tr><td class="nowrap">2011</td><td>Salma Dammak Ktari</td><td>Développement d'une démarche de conception d'une Webhouse sécurisée basée sur l'architecture MDA</td><td>MRIM</td></tr>
+              </tbody>
+            </table>
+            <p class="small muted" style="margin-top:12px">MRSI : Mastère de recherche en systèmes d'information · MRESE : Mastère de recherche en Enterprise System Engineering · MRIM : Mastère de recherche en informatique et multimédia (ISIMS).</p>
+          </div>
+        </details>
+
+        <h3 class="sub">Projets de fin d'études</h3>
+        <div class="counts">
+          <div class="stat"><div class="value">38</div><div class="label">Projets d'ingénieur</div></div>
+          <div class="stat"><div class="value">47</div><div class="label">Projets de licence</div></div>
+          <div class="stat"><div class="value">8</div><div class="label">Mastères professionnels</div></div>
+          <div class="stat"><div class="value">2</div><div class="label">Projets de maîtrise</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Enseignement ===================== -->
+    <section class="block" id="enseignement">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="num">05 · Enseignement</div>
+          <h2>Enseignement</h2>
+          <p>J'enseigne les bases de données, les systèmes décisionnels et la conception de systèmes d'information, de la licence au cycle d'ingénieur et au mastère. J'enseigne à l'ISIMS depuis 2009, après des postes à Toulouse et à Gabès.</p>
+        </div>
+
+        <div class="card">
+          <h3 class="sub">Enseignements 2025 – 2026</h3>
+          <ul class="now-list">
+            <li><span class="lvl">Ingénieur 1</span><span>Méthodologies de conception des systèmes d'information avancées</span></li>
+            <li><span class="lvl">Ingénieur 2</span><span>Gestion des bases de données massives — ITWM</span></li>
+            <li><span class="lvl">Ingénieur 3</span><span>Gestion des bases de données massives</span></li>
+            <li><span class="lvl">Ingénieur 4</span><span>Business Intelligence — Génie logiciel</span></li>
+            <li><span class="lvl">Ingénieur 5</span><span>Business Intelligence — ITWM</span></li>
+            <li><span class="lvl">Prépa 3</span><span>Conception orientée objet — Prépa intégrée informatique et multimédia</span></li>
+            <li><span class="lvl">Licence 3</span><span>Bases de données NoSQL — parcours Analyse de données et Big Data</span></li>
+          </ul>
+        </div>
+
+        <h3 class="sub">Matières enseignées</h3>
+        <div class="grid-3">
+          <div class="card">
+            <div class="level">Cycle d'ingénieur</div>
+            <ul class="course-list">
+              <li><span>Entrepôts de données</span><span class="yrs">2009 – 2023</span></li>
+              <li><span>Business Intelligence</span><span class="yrs">depuis 2022</span></li>
+              <li><span>Gestion des bases de données massives</span><span class="yrs">depuis 2022</span></li>
+              <li><span>Méthodologies de conception des SI avancées</span><span class="yrs">depuis 2021</span></li>
+              <li><span>Conception orientée objet</span><span class="yrs">depuis 2016</span></li>
+              <li><span>SGBD (ENIS, génie informatique)</span><span class="yrs">2006 – 2008</span></li>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="level">Mastère</div>
+            <ul class="course-list">
+              <li><span>Enterprise Business Intelligence</span><span class="yrs">2014 – 2021</span></li>
+              <li><span>Fondements des systèmes décisionnels</span><span class="yrs">2013 – 2020</span></li>
+              <li><span>Entrepôts de données</span><span class="yrs">2011 – 2018</span></li>
+              <li><span>Web sémantique et médias sociaux</span><span class="yrs">2016 – 2020</span></li>
+              <li><span>Langages avancés de manipulation des données</span><span class="yrs">2011 – 2014</span></li>
+              <li><span>Web analytics</span><span class="yrs">2020 – 2021</span></li>
+              <li><span>Bases de données NoSQL (Big Data, FSEG Sfax)</span><span class="yrs">2018 – 2019</span></li>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="level">Licence</div>
+            <ul class="course-list">
+              <li><span>Bases de données NoSQL</span><span class="yrs">depuis 2021</span></li>
+              <li><span>Conception des systèmes d'information</span><span class="yrs">2020 – 2022</span></li>
+              <li><span>Projet fédéré (méthode agile)</span><span class="yrs">2020 – 2022</span></li>
+              <li><span>Bases de données</span><span class="yrs">2011 – 2019</span></li>
+              <li><span>Intégration web et bases de données</span><span class="yrs">2011 – 2019</span></li>
+              <li><span>Conception orientée objet</span><span class="yrs">2014 – 2020</span></li>
+              <li><span>Administration et sécurité des BD</span><span class="yrs">2011 – 2014</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Vie universitaire ===================== -->
+    <section class="block" id="vie-universitaire">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="num">06 · Vie universitaire</div>
+          <h2>Responsabilités et engagement</h2>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3 class="sub">Responsabilités</h3>
+            <ul class="timeline">
+              <li class="now"><div class="t-date">2026/27 – 2029/30</div><div class="t-title">Responsable pédagogique de l'habilitation du parcours « Analyse de données et Big Data »</div><div class="t-desc">Licence en sciences de l'informatique, ISIMS : architecture du parcours, compétences visées et plan d'études</div></li>
+              <li class="now"><div class="t-date">2020 – 2027</div><div class="t-title">Directrice du département Sciences Informatique et Multimédia</div><div class="t-desc">ISIMS, Université de Sfax</div></li>
+              <li><div class="t-date">2019 – 2023</div><div class="t-title">Coordinatrice du domaine Qualité et Accréditation (PAQ-DGSE)</div><div class="t-desc">Responsable du domaine « Gestion et gouvernance »</div></li>
+              <li><div class="t-date">2016 – 2021</div><div class="t-title">Coordinatrice du mastère de recherche Enterprise System Engineering</div><div class="t-desc">ISIMS</div></li>
+              <li><div class="t-date">2014 – 2020</div><div class="t-title">Membre élue du conseil scientifique</div><div class="t-desc">ISIMS</div></li>
+              <li><div class="t-date">2008 – 2010</div><div class="t-title">Coordinatrice du mastère professionnel</div><div class="t-desc">ISIM Gabès</div></li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3 class="sub">Animation scientifique</h3>
+            <ul class="plain-list">
+              <li><span class="d">2025</span><b>Conférencière invitée</b> et organisatrice du workshop international de clôture IC DT-P sur les jumeaux numériques, Monastir</li>
+              <li><span class="d">2023 – 2026</span><b>Co-organisation de workshops internationaux</b> des projets IC xR-P, VES et IC DT-P : Sfax (2023), Tabarka (2024), Monastir (2025), Hammamet (2026)</li>
+              <li><span class="d">2023 – 2024</span><b>Mobilités internationales</b> : workshops du projet VES à la GUtech (Mascate, Oman) et à l'UMPSA (Malaisie)</li>
+              <li><span class="d">2018</span><b>BioDialog Summer School</b> on Biodiversity Informatics (DAAD, Université de Jena), Hammamet</li>
+            </ul>
+            <h4 style="margin:24px 0 12px">Comités de programme</h4>
+            <div class="committee">
+              <span><b>INFORSID</b> 2017 – 2025</span>
+              <span><b>ASOCA</b> 2024 – 2025</span>
+              <span><b>ISSATK</b> 2026</span>
+              <span><b>TACC</b> 2023</span>
+              <span><b>MAIDSS</b> 2022</span>
+              <span><b>ASD</b> 2018</span>
+              <span><b>MISC</b> 2018</span>
+              <span><b>IEEE SysCo</b> 2016</span>
+              <span><b>EDA</b> 2010 – 2012</span>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="sub">Engagement auprès des étudiants et de l'institution</h3>
+        <div class="grid-2">
+          <div class="card">
+            <ul class="plain-list">
+              <li><span class="d">2018 – 2022</span><b>Conseillère académique du club Enactus ISIMS</b> pendant quatre années universitaires</li>
+              <li><span class="d">2015 – 2019</span><b>Organisatrice principale de la Semaine culturelle de l'ISIMS</b> (cinq éditions)</li>
+              <li><span class="d">2017 – 2023</span><b>Journées d'orientation universitaire</b> : présentation de l'offre de formation aux futurs bacheliers</li>
+              <li><span class="d">2019</span><b>Membre du jury du Hult Prize ISIMS</b>, concours international d'entrepreneuriat social</li>
+            </ul>
+          </div>
+          <div class="card">
+            <ul class="plain-list">
+              <li><span class="d">2025</span><b>Formations « Kotlin Multiplatform » et « Flutter »</b>, coordonnées avec l'Orange Digital Center (Centre 4C-ISIMS)</li>
+              <li><span class="d">2024</span><b>Projet « Ingénieurs innovateurs »</b> avec l'ARSII, l'APII et l'Ordre des ingénieurs tunisiens</li>
+              <li><span class="d">2023</span><b>ISIMS Innovative Projects Competitions</b> : encadrement en design thinking</li>
+              <li><span class="d">2019</span><b>Organisation de la Journée portes ouvertes</b> de l'ISIMS</li>
+            </ul>
+          </div>
+        </div>
+
+        <h3 class="sub">Certifications et langues</h3>
+        <div class="grid-3">
+          <div class="card">
+            <h4>PMP®</h4>
+            <p class="small muted">Project Management Professional, Project Management Institute · 2026</p>
+          </div>
+          <div class="card">
+            <h4>Agile Leader &amp; Scrum Master</h4>
+            <p class="small muted">ALPC™ et SMPC®, Certiprof · 2025</p>
+          </div>
+          <div class="card">
+            <h4>Langues</h4>
+            <p class="small muted">Arabe et français (maîtrise) · anglais professionnel · espagnol (notions)</p>
+          </div>
+        </div>
+        <p class="small muted" style="margin-top:14px">Formations complémentaires : ISO 21001:2018 et ISO 9001:2015 (management de la qualité en éducation), assurance qualité et accréditation, scénarisation pédagogique et enseignement en ligne (Moodle, ressources éducatives libres).</p>
+      </div>
+    </section>
+
+    <!-- ===================== Contact ===================== -->
+    <section class="block" id="contact">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="num">07 · Contact</div>
+          <h2>Contact</h2>
+        </div>
+        <div class="contact">
+          <div class="card">
+            <div class="contact-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+              <div><div class="k">E-mail</div><a href="mailto:faiza.ghozzi@isims.usf.tn">faiza.ghozzi@isims.usf.tn</a></div>
+            </div>
+            <div class="contact-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
+              <div><div class="k">Adresse</div><div class="v">Institut Supérieur d'Informatique et de Multimédia de Sfax<br>Pôle technologique de Sfax, BP 242, 3021 Sfax, Tunisie</div></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="contact-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V10l7-5 7 5v11M9 21v-6h6v6"/></svg>
+              <div><div class="k">Page institutionnelle</div><a href="https://isimsf.rnu.tn/fra/profil/Ghozzi_Faiza" target="_blank" rel="noopener">ISIMS · profil</a></div>
+            </div>
+            <div class="contact-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5v14z"/><path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5"/></svg>
+              <div><div class="k">Thèse de doctorat</div><a href="https://theses.hal.science/tel-00549421/" target="_blank" rel="noopener">theses.hal.science/tel-00549421</a></div>
+            </div>
+            <div class="contact-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+              <div><div class="k">Laboratoire</div><div class="v">MIRACL — Multimedia, InfoRmation Systems and Advanced Computing Laboratory</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>© Faiza Ghozzi · ISIMS, Université de Sfax</span>
+      <span>Dernière mise à jour : novembre 2026</span>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" type="button" aria-label="Revenir en haut de la page">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <script>
+    (function () {
+      var root = document.documentElement;
+
+      /* --- Thème clair / sombre (mémorisé dans le navigateur) --- */
+      try { var saved = localStorage.getItem("theme"); if (saved) root.setAttribute("data-theme", saved); } catch (e) {}
+      document.getElementById("themeBtn").addEventListener("click", function () {
+        var current = root.getAttribute("data-theme") ||
+          (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        var next = current === "dark" ? "light" : "dark";
+        root.setAttribute("data-theme", next);
+        try { localStorage.setItem("theme", next); } catch (e) {}
+      });
+
+      /* --- Menu mobile --- */
+      var nav = document.getElementById("nav"), menuBtn = document.getElementById("menuBtn");
+      menuBtn.addEventListener("click", function () {
+        var open = nav.classList.toggle("open");
+        menuBtn.setAttribute("aria-expanded", open);
+      });
+      nav.addEventListener("click", function (e) {
+        if (e.target.tagName === "A") { nav.classList.remove("open"); menuBtn.setAttribute("aria-expanded", "false"); }
+      });
+
+      /* --- Lien actif dans le menu selon la section visible --- */
+      var links = nav.querySelectorAll("a");
+      var sections = Array.prototype.map.call(links, function (a) { return document.querySelector(a.getAttribute("href")); });
+      function updateActive() {
+        var y = window.scrollY + 120, idx = 0;
+        sections.forEach(function (s, i) { if (s && s.offsetTop <= y) idx = i; });
+        if (window.innerHeight + window.scrollY >= document.body.scrollHeight - 4) idx = sections.length - 1;
+        links.forEach(function (a, i) { a.classList.toggle("active", i === idx); });
+      }
+      window.addEventListener("scroll", updateActive, { passive: true });
+      updateActive();
+
+      /* --- Publications : filtres, recherche et liste réduite --- */
+      var VISIBLES_PAR_DEFAUT = 12;   // nombre de publications affichées avant « Afficher toutes »
+      var list = document.getElementById("pubList");
+      var groups = Array.prototype.slice.call(list.querySelectorAll(".pub-year"));
+      var pubs = Array.prototype.slice.call(list.querySelectorAll(".pub"));
+      var buttons = document.querySelectorAll(".seg button");
+      var search = document.getElementById("pubSearch");
+      var empty = document.getElementById("pubEmpty");
+      var more = document.getElementById("pubMore");
+      var filter = "all", expanded = false;
+      function norm(s) { return s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, ""); }
+      groups.forEach(function (g) {
+        var year = g.querySelector(".year-label").textContent;
+        g.querySelectorAll(".pub").forEach(function (p) { p._text = norm(p.textContent + " " + year); });
+      });
+      buttons.forEach(function (b) {
+        var f = b.getAttribute("data-filter");
+        var n = f === "all" ? pubs.length : pubs.filter(function (p) { return p.dataset.type === f; }).length;
+        b.querySelector(".n").textContent = n;
+        b.addEventListener("click", function () {
+          filter = f;
+          buttons.forEach(function (x) { x.setAttribute("aria-pressed", x === b ? "true" : "false"); });
+          apply();
+        });
+      });
+      more.addEventListener("click", function () {
+        expanded = !expanded;
+        apply();
+        if (!expanded) document.getElementById("publications").scrollIntoView();
+      });
+      function apply() {
+        var q = norm(search.value.trim()), shown = 0;
+        var browsing = filter === "all" && !q;            // aucune recherche : on peut réduire la liste
+        pubs.forEach(function (p) {
+          var ok = (filter === "all" || p.dataset.type === filter) && (!q || p._text.indexOf(q) !== -1);
+          p.hidden = !ok;
+          if (ok) shown++;
+          p.classList.toggle("extra", ok && shown > VISIBLES_PAR_DEFAUT);
+        });
+        var collapsible = browsing && pubs.length > VISIBLES_PAR_DEFAUT, first = true;
+        groups.forEach(function (g) {
+          var visible = g.querySelectorAll(".pub:not([hidden])");
+          var allExtra = visible.length > 0 && Array.prototype.every.call(visible, function (p) { return p.classList.contains("extra"); });
+          g.hidden = visible.length === 0;
+          g.classList.toggle("extra", allExtra);
+          var shownNow = !g.hidden && !(allExtra && collapsible && !expanded);
+          g.classList.toggle("first", shownNow && first);
+          if (shownNow) first = false;
+        });
+        list.classList.toggle("collapsed", collapsible && !expanded);
+        more.hidden = !collapsible;
+        more.textContent = expanded ? "Réduire la liste" : "Afficher les " + pubs.length + " publications";
+        more.setAttribute("aria-expanded", expanded);
+        empty.hidden = shown !== 0;
+      }
+      search.addEventListener("input", apply);
+      apply();
+
+      /* --- Bouton « retour en haut » --- */
+      var toTop = document.getElementById("toTop");
+      window.addEventListener("scroll", function () { toTop.classList.toggle("show", window.scrollY > 900); }, { passive: true });
+      toTop.addEventListener("click", function () { window.scrollTo({ top: 0 }); });
+    })();
+  </script>
+</body>
+</html>
