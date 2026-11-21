@@ -18,6 +18,6 @@ En ligne : https://jedidifaiza.github.io/FaizaGhozzi/
 - **Ajouter une publication** : dans `index.html`, copier un bloc `<li class="pub" ...> ... </li>` dans l'année voulue.
   L'attribut `data-type` vaut `journal`, `intl`, `natl` ou `thesis`.
 - **Changer les couleurs** : modifier les variables en haut du bloc `<style>` (section « Couleurs »).
-- **Ajouter ORCID ou Google Scholar** : décommenter les liens prévus dans la section Profil.
+- **Ajouter Google Scholar** : décommenter le lien prévu dans la section Profil.
 
 Chaque modification envoyée sur la branche principale est publiée automatiquement par GitHub Pages en une minute environ.
