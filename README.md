@@ -18,6 +18,6 @@ En ligne : https://jedidifaiza.github.io/FaizaGhozzi/
 - **Ajouter une publication** : dans `index.html`, copier un bloc `<li class="pub" ...> ... </li>` dans l'année voulue.
   L'attribut `data-type` vaut `journal`, `intl`, `natl` ou `thesis`.
 - **Changer les couleurs** : modifier les variables en haut du bloc `<style>` (section « Couleurs »).
-- **Ajouter un profil** (ResearchGate, DBLP…) : copier un bouton `<a class="btn" ...>` de la section Profil et une ligne `contact-row` de la section Contact.
+- **Ajouter un profil** (ResearchGate…) : copier un lien du bloc `<nav class="profiles">` de la section Profil et une ligne `contact-row` de la section Contact.
 
 Chaque modification envoyée sur la branche principale est publiée automatiquement par GitHub Pages en une minute environ.
