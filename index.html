@@ -31,7 +31,7 @@
     "jobTitle": "Maître assistante en informatique",
     "email": "mailto:faiza.ghozzi@isims.usf.tn",
     "affiliation": [
-      {"@type": "CollegeOrUniversity", "name": "Institut Supérieur d'Informatique et de Multimédia de Sfax (ISIMS), Université de Sfax"},
+      {"@type": "CollegeOrUniversity", "name": "Institut Supérieur d'Informatique et de Multimédia de Sfax (ISIMS)", "url": "https://isimsf.rnu.tn/", "parentOrganization": {"@type": "CollegeOrUniversity", "name": "Université de Sfax", "url": "https://uss.rnu.tn/"}},
       {"@type": "ResearchOrganization", "name": "Laboratoire MIRACL"}
     ],
     "alumniOf": {"@type": "CollegeOrUniversity", "name": "Université Paul Sabatier – Toulouse III"},
@@ -166,6 +166,8 @@
     .hero .role { font-size: 18px; font-weight: 500; color: var(--ink); margin-top: 18px; }
     .hero .org { display: flex; flex-wrap: wrap; gap: 4px 14px; margin-top: 6px; font-size: 15px; color: var(--ink-2); }
     .hero .org span { display: inline-flex; align-items: center; gap: 6px; }
+    .hero .org a { color: inherit; text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: 4px; }
+    .hero .org a:hover { color: var(--accent); text-decoration-color: currentColor; }
     .hero .org svg { width: 15px; height: 15px; color: var(--accent); flex: none; }
     .hero .bio { font-size: 16.5px; color: var(--ink-2); margin-top: 18px; max-width: 66ch; }
     .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
@@ -346,6 +348,8 @@
     .contact-row a, .contact-row .v { font-weight: 500; word-break: break-word; }
     footer { padding: 32px 0 48px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13.5px; }
     footer .wrap { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; }
+    footer a { color: inherit; }
+    footer a:hover { color: var(--accent); }
 
     @media print {
       .topbar, .toolbar, .actions, .to-top { display: none !important; }
@@ -399,7 +403,7 @@
             <p class="alt-name">Faiza Ghozzi épouse Jedidi</p>
             <p class="role">Maître assistante · Directrice du département Sciences Informatique et Multimédia</p>
             <p class="org">
-              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V10l7-5 7 5v11M9 21v-6h6v6"/></svg>ISIMS, Université de Sfax</span>
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V10l7-5 7 5v11M9 21v-6h6v6"/></svg><span style="display:inline"><a href="https://isimsf.rnu.tn/" target="_blank" rel="noopener">ISIMS</a>, <a href="https://uss.rnu.tn/" target="_blank" rel="noopener">Université de Sfax</a></span></span>
               <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 1.8 3h10.4a2 2 0 0 0 1.8-3l-5-9V3"/></svg>Laboratoire MIRACL</span>
               <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>Sfax, Tunisie</span>
             </p>
@@ -1240,6 +1244,14 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
               <div><div class="k">Adresse</div><div class="v">Institut Supérieur d'Informatique et de Multimédia de Sfax<br>Pôle technologique de Sfax, BP 242, 3021 Sfax, Tunisie</div></div>
             </div>
+            <div class="contact-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V10l7-5 7 5v11M9 21v-6h6v6"/></svg>
+              <div><div class="k">Établissement</div><a href="https://isimsf.rnu.tn/" target="_blank" rel="noopener">isimsf.rnu.tn</a></div>
+            </div>
+            <div class="contact-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9l10-6 10 6-10 6z"/><path d="M6 11.5V16c0 1.7 2.7 3 6 3s6-1.3 6-3v-4.5"/><path d="M22 9v6"/></svg>
+              <div><div class="k">Université de Sfax</div><a href="https://uss.rnu.tn/" target="_blank" rel="noopener">uss.rnu.tn</a></div>
+            </div>
           </div>
           <div class="card">
             <div class="contact-row">
@@ -1278,7 +1290,7 @@
 
   <footer>
     <div class="wrap">
-      <span>© Faiza Ghozzi · ISIMS, Université de Sfax</span>
+      <span>© Faiza Ghozzi · <a href="https://isimsf.rnu.tn/" target="_blank" rel="noopener">ISIMS</a>, <a href="https://uss.rnu.tn/" target="_blank" rel="noopener">Université de Sfax</a></span>
       <span>Dernière mise à jour : novembre 2026</span>
     </div>
   </footer>
